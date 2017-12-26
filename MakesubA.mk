@@ -1,3 +1,7 @@
+$(warning TEST=$(TEST))
+$(warning MAKE=$(MAKE))
+$(warning MAKEFLAGS=$(MAKEFLAGS))
+
 .PHONY: allA
 allA: subA-C subA-D
 	sleep 1

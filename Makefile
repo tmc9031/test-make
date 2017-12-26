@@ -1,3 +1,8 @@
+export TEST:=qwert
+$(warning TEST=$(TEST))
+$(warning MAKE=$(MAKE))
+$(warning MAKEFLAGS=$(MAKEFLAGS))
+
 .PHONY: all
 all: subA subB
 	sleep 1
@@ -12,7 +17,7 @@ subA:
 	sleep 1
 	@echo $@ 1
 	@echo $@ 2
-	$(MAKE) -f MakesubA.mk
+	make -f MakesubA.mk
 	@echo $@ 3
 	@echo $@ 4
 	$(MAKE) -f MakesubB.mk
