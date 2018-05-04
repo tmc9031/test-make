@@ -1,3 +1,6 @@
+
+$(warning GLOBAL == $(GLOBAL))
+
 .PHONY: allA
 allA: subA-C subA-D
 	sleep 1
